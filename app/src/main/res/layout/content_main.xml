@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main"
+    tools:context="com.example.prashant.Care4Health.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation = "horizontal">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15dp"
+                    android:paddingRight = "15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom = "15dp"
+                    android:layout_marginRight="5dp"
+
+                    android:src="@drawable/imag5"
+                    android:id = "@+id/img1"
+                    android:contentDescription="@null"
+                    android:clickable="true" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15dp"
+                    android:paddingRight = "15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom = "15dp"
+                    android:clickable="true"
+                    android:layout_marginRight="5dp"
+
+
+                    android:src="@drawable/img6"
+                    android:id = "@+id/img2"
+                    android:contentDescription="@null" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight = "15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom = "15dp"
+                    android:clickable="true"
+                    android:layout_marginRight="5dp"
+
+
+                    android:src="@drawable/img9"
+                    android:id = "@+id/img3"
+                    android:contentDescription="@null" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight = "15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom = "15dp"
+                    android:clickable="true"
+
+                    android:src="@drawable/img10"
+                    android:id = "@+id/img4"
+                    android:contentDescription="@null" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight = "15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom = "15dp"
+                    android:clickable="true"
+
+                    android:layout_marginLeft="5dp"
+
+                    android:src="@drawable/img"
+                    android:id = "@+id/img5"
+                    android:contentDescription="@null" />
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/horizontal"
+            android:background="#f7f6f6">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="@string/Choose_prescription"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="25dp"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="320dp"
+                android:layout_height="120dp"
+                android:id="@+id/card_view1"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:clickable="true"
+                android:onClick="card_view1"
+
+                card_view:cardBackgroundColor="@android:color/transparent"
+                card_view:cardElevation="5dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFCACFCA">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight = "15dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom = "15dp"
+                        android:clickable="true"
+
+                        android:src="@drawable/physician"
+                        android:id = "@+id/card1_img1"
+                        android:contentDescription="@null"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_width = "wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/card1_text1"
+                        android:textSize="25sp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="25dp"
+                        android:text="@string/physician"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toEndOf="@+id/card1_img1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/card1_text2"
+                        android:paddingLeft="20dp"
+                        android:textSize="15sp"
+                        android:text="@string/Upload_Prescription"
+                        android:paddingTop="10dp"
+
+                        android:layout_below="@+id/card1_text1"
+                        android:layout_alignStart="@+id/card1_text1"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="320dp"
+                android:layout_height="120dp"
+                android:id="@+id/card_view2"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:clickable="true"
+                android:onClick="card_view2"
+
+                card_view:cardBackgroundColor="@android:color/transparent"
+                card_view:cardElevation="5dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFCACFCA">
+
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight = "15dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom = "15dp"
+                        android:clickable="true"
+
+                        android:src="@drawable/cardiology"
+                        android:id = "@+id/card2_img1"
+                        android:contentDescription="@null"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_width = "wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/card2_text1"
+                        android:textSize="25sp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="25dp"
+                        android:text="@string/cardiology"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toEndOf="@+id/card2_img1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/card2_text2"
+                        android:textSize="15sp"
+                        android:paddingLeft="20dp"
+                        android:text="@string/Upload_Prescription"
+                        android:paddingTop="10dp"
+
+                        android:layout_alignStart="@+id/card2_text1"
+                        android:layout_below="@+id/card2_text1"
+                        android:layout_alignEnd="@+id/card2_text1" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="320dp"
+                android:layout_height="120dp"
+                android:id="@+id/card_view3"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:clickable="true"
+                android:onClick="card_view3"
+
+                card_view:cardBackgroundColor="@android:color/transparent"
+                card_view:cardElevation="5dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFCACFCA">
+
+
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight = "15dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom = "15dp"
+                        android:clickable="true"
+
+                        android:src="@drawable/ophthalmology"
+
+                        android:id = "@+id/card3_img1"
+                        android:contentDescription="@null"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_width = "wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/card3_text1"
+                        android:textSize="25sp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="25dp"
+                        android:text="@string/Ophthalmology"
+                        android:layout_toEndOf="@+id/card3_img1"
+                        android:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/card3_text2"
+                        android:textSize="15sp"
+                        android:text="@string/Upload_Prescription"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="15dp"
+                        android:layout_below="@+id/card3_text1"
+                        android:layout_alignStart="@+id/card3_text1" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="320dp"
+                android:layout_height="120dp"
+                android:id="@+id/card_view4"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:clickable="true"
+                android:onClick="card_view4"
+
+                card_view:cardBackgroundColor="@android:color/transparent"
+                card_view:cardElevation="5dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFCACFCA">
+
+
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight = "15dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom = "15dp"
+                        android:clickable="true"
+
+                        android:src="@drawable/paediatrics"
+                        android:id = "@+id/card4_img1"
+                        android:contentDescription="@null"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_width = "wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/card4_text1"
+                        android:textSize="25sp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="25dp"
+                        android:text="@string/Paediatrics"
+                        android:layout_toEndOf="@+id/card4_img1"
+                        android:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/card4_text2"
+                        android:textSize="15sp"
+                        android:paddingLeft="20dp"
+                        android:text="@string/Upload_Prescription"
+                        android:paddingTop="5dp"
+
+                        android:layout_below="@+id/card4_text1"
+                        android:layout_alignStart="@+id/card4_text1" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="320dp"
+                android:layout_height="120dp"
+                android:id="@+id/card_view5"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:clickable="true"
+                android:onClick="card_view5"
+
+                card_view:cardBackgroundColor="@android:color/transparent"
+                card_view:cardElevation="5dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFCACFCA">
+
+
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight = "15dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom = "15dp"
+                        android:clickable="true"
+
+                        android:src="@drawable/gynecology"
+                        android:id = "@+id/card5_img1"
+                        android:contentDescription="@null"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_width = "wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/card5_text1"
+                        android:textSize="25sp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="25dp"
+                        android:text="@string/Gynaecology"
+                        android:layout_toEndOf="@+id/card5_img1"
+                        android:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/card5_text2"
+                        android:textSize="15sp"
+                        android:paddingLeft="20dp"
+                        android:text="@string/Upload_Prescription"
+                        android:paddingTop="10dp"
+
+                        android:layout_below="@+id/card5_text1"
+                        android:layout_alignStart="@+id/card5_text1" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

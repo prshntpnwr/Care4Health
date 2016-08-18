@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/get_personalized_symptoms"
+            android:icon="@drawable/get_personalized_symptoms"
+            android:title="@string/get_personalized_symptoms" />
+        <item
+            android:id="@+id/connect_with_family"
+            android:icon="@drawable/connect_with_family"
+            android:title="@string/connect_with_family" />
+
+        <item
+            android:id="@+id/medication_reminder"
+            android:icon="@drawable/setreminder"
+            android:title="@string/medication_reminder" />
+
+        <item
+            android:id="@+id/medicine_details"
+            android:icon="@drawable/medicinedetails"
+            android:title="@string/get_medicine_details" />
+        <item
+            android:id="@+id/join_support_community"
+            android:icon="@drawable/join_community"
+            android:title="@string/join_support_community" />
+
+    </group>
+
+    <item android:title="@string/knew_more">
+        <menu>
+
+            <item
+                android:id="@+id/help_and_feedback"
+
+                android:title="@string/help_and_feedback" />
+
+            <item
+                android:id="@+id/about_healthvings"
+
+                android:title="@string/about_Care4Health" />
+
+        </menu>
+    </item>
+
+</menu>
